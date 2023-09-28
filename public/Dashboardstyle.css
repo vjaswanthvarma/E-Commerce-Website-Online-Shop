@@ -1,0 +1,141 @@
+body{
+    background-color:white;
+  }
+  #home{
+    font-size: x-large;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    margin-right:500px;
+  }
+  #home:hover{
+    color:greenyellow;
+  }
+  nav{
+    margin-bottom:10px;
+  }
+  #location{
+    font-size:x-large;
+    color:white;
+    padding:10px;
+    position: relative;
+    right:300px;
+    text-decoration: none;
+  }
+  #location:hover{
+    color: greenyellow;
+  }
+  .logos{
+    display: flex;
+  }
+  #search{
+    color:greenyellow;
+    background-color:greenyellow;
+    position: relative;
+    right:200px;
+  }
+  #Search{
+    width:600px;
+    height:6vh;
+  }
+  #user{
+    position: relative;
+    right:200px;
+     top:10px;
+    font-size: xx-large;
+  }
+  #Account{
+    position: relative;
+    right:200px;
+    font-size: x-large;
+  }
+  #orders{
+    position: relative;
+    right:100px;
+    color:white;
+    font-size: x-large;
+    text-decoration: none;
+  }
+  #orders:hover{
+    color:greenyellow;
+  }
+  #cart{
+    position: relative;
+    right:50px;
+    color:black;
+    font-size: xx-large;
+    text-decoration: none;
+  }
+  #cart:hover{
+    font-size:xx-large;
+    color:red;
+  }
+  .fashions{
+    display: flex;
+    justify-content:end;
+    margin-top:10px;
+    margin-bottom:50px;
+    background-color: antiquewhite;
+    margin-right:50px;
+  }
+  .Electronics{
+    display: flex;
+    justify-content:end;
+    margin-top:10px;
+    margin-bottom:50px;
+    background-color: antiquewhite;
+    margin-right:50px;
+  }
+  .card{
+    margin-left:20px;
+
+  }
+  .choise{
+    color:black;
+    padding-left:400px;
+  }
+  .pickupstyle{
+    display: flex;
+    justify-content:end;
+    margin-top:10px;
+    background-color: antiquewhite;
+    margin-right:50px;
+    margin-bottom:50px;
+  }
+  h1{
+    position: relative;
+    right:300px;
+    top:100px;
+    text-align: center;
+  }
+  .echoise{
+    margin-left:20px;
+  }
+  #eh1{
+    position: relative;
+    text-align: center;
+    right:300px;
+    left:1px;
+  }
+  .schoise{
+    margin-left:300px;
+  }
+  .remstyle{
+    display: flex;
+    justify-content:end;
+    margin-top:100px;
+    background-color: antiquewhite;
+    margin-right:50px;
+  }
+  .more{
+    position: relative;
+    top:50px;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: none;
+    font-weight:bold;
+  }
+  #carts{
+    margin-left:100px;
+    margin-bottom:5px;
+  }
