@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url("Dashboard/contact.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            margin-top:150px;
+        }
+        #email{
+            width:450px;
+            height:3.5vh;
+            margin-bottom:10px;
+            border-radius:5px;
+            background-color:bisque;
+            padding-left:10px;
+            font-style: normal;
+            font-size:large;
+            font-weight: 700;
+            color:green;
+        }
+        #send{
+            width:570px;
+            background-color:black;
+            color:white;
+            height:3.5vh;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: large;
+        }
+        #send:hover{
+            background-color:white;
+            color:black;
+
+        }
+        #texts{
+            background-color: bisque;
+            border-radius:10px;
+            margin-bottom:10px;
+            padding-left:10px;
+            padding-top:10px;
+            font-size:large;
+            font-weight: 600;
+            color: blue;
+        }
+        label{
+            font-size:large;
+            font-weight: bold;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <form action="mailto:jaswanrh378@gmail.com" enctype="text/plain" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email"  id="email" placeholder="Enter our email"><br>
+        <label for="contact">Discription:</label><br>
+        <textarea id="texts" name="texts" rows="15" cols="60" placeholder="Enter our FeedBack"></textarea><br>
+        <input type="submit" value="Send" id="send">
+    </form>
+    </div>
+</body>
+</html>

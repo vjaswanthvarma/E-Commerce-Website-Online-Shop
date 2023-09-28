@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    * {
+  box-sizing: border-box;
+}
+    h3{
+      color:black;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+    }
+    #log:hover{
+      color:red;
+    }
+    #logos{
+      position: relative;
+      color:green;
+      width:100%;
+      height:5vh;
+      text-align: center;
+      padding-left:10px;
+      background-color:antiquewhite;
+    }
+    #account{
+      background-color:aquamarine
+    }
+    .accounts{
+      top:100px;
+    }
+    #Logout{
+      color:black;
+    }
+    #logo{
+      position: relative;
+      left:15px;
+      border-radius:10px;
+    }
+    .logout{
+      display: flex;
+      position: relative;
+      top:150px;
+    }
+    #delete{
+      position: relative;
+      top:200px;
+      text-decoration:none;}
+    .userdata{
+      position: relative;
+      top:100px;
+      background-color:greenyellow;
+    }
+    #userdatavalues{
+      margin-bottom:30px;
+    }
+    #Linklogout{
+      text-decoration: none;
+      color:red;
+    }
+    #bsearch{
+      background-color: greenyellow;
+      color: black;
+      border-radius:10px;
+    }
+    #bsearch:hover{
+      background-color:greenyellow;
+      width:80px;
+      border-radius:10px;
+    }
+    #home{
+      position: relative;
+      left:80px;
+    }
+    #orders{
+      position: relative;
+      right:140px;
+    }
+  </style>
+  </head>
+<body>
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+        <img  id ="logo" src="Dashboard/Logo2.jpg" height="80vh" width="100px">
+        <div class="logos">
+        <a  id="home" href="/home">Home</a>
+        <a  id="location" href="#">Location</a>
+        <form class="d-flex" role="search" id="search">
+          <input type="search" id="Search"  class="form-control me-2" aria-label="Search" placeholder="Search">
+          <button type="button" id="bsearch">Search</button>
+        </form>
+        </div>
+        <div class="info">
+          <i  id="user" class="fa fa-user"></i>
+    <button class="btn btn-primary" id="Account" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">My Account</button></a>
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">User Account</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" id="account">
+      <h2 id="logos">Hello User</h2>
+      <div class="accounts">
+      <% if(locals.names){%>
+        <div class="userdata">
+        <% for(var i=0;i<names.length;i++) {%>
+          <h3 id="userdatavalues"><%=names[i]%></h3>
+   <% }%>
+      <%}%>
+        </div>
+      <div class="logout">
+      <i class="fa fa-sign-out"  id="Logout" style="font-size:40px"></i>
+      <a id="Linklogout" href="/logout"><h3 id="log">Logout</h3></a>
+      </div>
+      <a id="delete" href="delete"><h3 id="log">DeleteAccount</h3></a>
+        </div>
+    </div>
+  </div>
+          <a  id="orders" href="https://www.amazon.in/gp/css/order-history?ref_=nav_orders_first">Return &<span>Orders</span></a>
+          <a id="cart" href="/itemcart"><i id="cart icon" class="fa fa-shopping-cart">Cart</i></a>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login Form Design | CodeLab</title>
+      <link rel="stylesheet" href="style.css">
+      <style>
+      </style>
+   </head>
+   <body>
+      <div class="wrapper">
+         <% if(locals.name){%>
+               <h1 id="loginname"><%=name%></h1>
+         <%}%>
+         <div class="title">
+            Login Form
+         </div>
+         <form action="/loginsubmits" method="POST">
+            <div class="field">
+               <input type="text" name="email" required>
+               <label>Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password"  name="password" placeholder="password">
+               <label>Password</label>
+            </div>
+               <div class="pass-link">
+                  <a href="/Forget">Forgot password?</a>
+               </div>
+            <div class="field">
+               <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">
+               Not have any account? <a href="/signup">Signup now</a>
+            </div>
+        </div>
+         </form>
+      </div>
+   </body>
+</html>

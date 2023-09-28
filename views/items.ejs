@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="Dashboardstyle.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <%- include("header.ejs")%>
+    
+    <div class="remstyle">
+        <div class="more">
+          <a href="https://www.flipkart.com/products-list/recommended-items?screen=dynamic&pk=stores%3Dclo%2Fash%2Faxc%2Fmmk%2Fkp7%2F~pIds%3DSHTGMUBKREYYAGFD%2CSHTGMUBKREYYAGFD%2CSHTGMUBKREYYAGFD~contentTags%3DADD_PARENT_TO_WIDGET~marketplace%3DFLIPKART~widgetType%3DproductCard~contentType%3DpersonalisedRecommendation%2Fp2p-same&marketplace=FLIPKART&wid=13.productCard.PMU_V2_7" class="more">View More</a>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="Dashboard/shirt1.jpg" class="card-img-top" width="500px" height="200px">
+          <div class="card-body">
+            <h5 class="card-title">JUHIL BAZAR</h5>
+            <a href="https://www.flipkart.com/fibermill-men-solid-formal-pink-shirt/p/itm2bc3ae083f73f?pid=SHTGBXYVUV9PSE8A&lid=LSTSHTGBXYVUV9PSE8AAKQ7F8&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_11&otracker=search&otracker1=search&fm=Search&iid=en_oFOAUekohUtWglVSygaoFD8HwhawYreGQuRoa5QFRakfqz1Hdxe5y6sBYyRlxBv1ZcVq745th8S8htGoXp-IuA%3D%3D&ppt=sp&ppn=sp&ssid=eidf3h55q80000001692529039488&qH=514ca2b2d46ccf67" class="btn btn-primary">Buy now</a>
+          </div>
+          <form action="/cart" method="post">
+            <input  type="hidden" name="img" value="Dashboard/shirt1.jpg">
+            <input  type="hidden"  name="name" value="JUHIL BAZAR">
+            <input type="hidden" name="linkn" value="https://www.flipkart.com/fibermill-men-solid-formal-pink-shirt/p/itm2bc3ae083f73f?pid=SHTGBXYVUV9PSE8A&lid=LSTSHTGBXYVUV9PSE8AAKQ7F8&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_11&otracker=search&otracker1=search&fm=Search&iid=en_oFOAUekohUtWglVSygaoFD8HwhawYreGQuRoa5QFRakfqz1Hdxe5y6sBYyRlxBv1ZcVq745th8S8htGoXp-IuA%3D%3D&ppt=sp&ppn=sp&ssid=eidf3h55q80000001692529039488&qH=514ca2b2d46ccf67">
+            <input id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+          </form>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="Dashboard/shirt2.jpg" class="card-img-top" width="100px" height="200px">
+          <div class="card-body">
+            <h5 class="card-title">SMILE STONE</h5>
+            <a href="https://www.flipkart.com/greenflair-men-solid-casual-white-shirt/p/itmeae4f1f17ada4?pid=SHTGG5NUMGEGXCSY&lid=LSTSHTGG5NUMGEGXCSYJGVZNP&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=103e9a14-bdb9-4dc0-b326-7a4cfa93b61a.SHTGG5NUMGEGXCSY.SEARCH&ppt=sp&ppn=sp&qH=514ca2b2d46ccf67" class="btn btn-primary">Buy Now</a>
+          </div>
+          <form action="/cart" method="post">
+            <input  type="hidden" name="img" value="Dashboard/shirt2.jpg">
+            <input  type="hidden"  name="name" value="SMILE STONE">
+            <input type="hidden" name="linkn" value="https://www.flipkart.com/greenflair-men-solid-casual-white-shirt/p/itmeae4f1f17ada4?pid=SHTGG5NUMGEGXCSY&lid=LSTSHTGG5NUMGEGXCSYJGVZNP&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=103e9a14-bdb9-4dc0-b326-7a4cfa93b61a.SHTGG5NUMGEGXCSY.SEARCH&ppt=sp&ppn=sp&qH=514ca2b2d46ccf67">
+            <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+          </form>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="Dashboard/shirt3.jpg" class="card-img-top" width="100px" height="200px">
+          <div class="card-body">
+            <h5 class="card-title">Zoitgiest</h5>
+            <a href="https://www.amazon.in/Amazon-Brand-Inkast-S-02C_Medium-Grey_xx-Large/dp/B07WDJ6CS7/ref=sr_1_1_sspa?crid=1YR3Q011ZZCGU&keywords=shirts&qid=1692531016&sprefix=shirt%2Caps%2C297&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" class="btn btn-primary">Buy Now</a>
+          </div>
+          <form action="/cart" method="post">
+            <input  type="hidden" name="img" value="Dashboard/shirt3.jpg">
+            <input  type="hidden"  name="name" value="Zoitgiest">
+            <input type="hidden" name="linkn" value="https://www.amazon.in/Amazon-Brand-Inkast-S-02C_Medium-Grey_xx-Large/dp/B07WDJ6CS7/ref=sr_1_1_sspa?crid=1YR3Q011ZZCGU&keywords=shirts&qid=1692531016&sprefix=shirt%2Caps%2C297&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+            <input id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+          </form>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="Dashboard/shirt4.jpg" class="card-img-top" width="100px" height="200px">
+          <div class="card-body">
+            <h5 class="card-title">VeBNoR </h5>
+            <a href="https://www.flipkart.com/protozone-men-striped-casual-white-shirt/p/itma33c242a740de?pid=SHTG6FF9VTU9VN4D&lid=LSTSHTG6FF9VTU9VN4DIJBLGO&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_8&otracker=search&otracker1=search&fm=Search&iid=en_oFOAUekohUtWglVSygaoFD8HwhawYreGQuRoa5QFRakM_PvOGYCw8UiRpvKRldaRG12-StjflwdCvDDaxx7nmA%3D%3D&ppt=sp&ppn=sp&qH=514ca2b2d46ccf67" class="btn btn-primary">Buy Now</a>
+          </div>
+          <form action="/cart" method="post">
+            <input  type="hidden" name="img" value="Dashboard/shirt4.jpg">
+            <input  type="hidden"  name="name" value="VeBNoR">
+            <input type="hidden" name="linkn" value="https://www.flipkart.com/protozone-men-striped-casual-white-shirt/p/itma33c242a740de?pid=SHTG6FF9VTU9VN4D&lid=LSTSHTG6FF9VTU9VN4DIJBLGO&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_8&otracker=search&otracker1=search&fm=Search&iid=en_oFOAUekohUtWglVSygaoFD8HwhawYreGQuRoa5QFRakM_PvOGYCw8UiRpvKRldaRG12-StjflwdCvDDaxx7nmA%3D%3D&ppt=sp&ppn=sp&qH=514ca2b2d46ccf67">
+            <input   id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+          </form>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="Dashboard/shirt5.jpg" class="card-img-top" width="100px" height="200px">
+          <div class="card-body">
+            <h5 class="card-title">PopeLeo</h5>
+            <a href="https://www.flipkart.com/zoitgiest-men-checkered-casual-multicolor-shirt/p/itmd4f89b743c1ca?pid=SHTGQRGHKFWMNNNH&lid=LSTSHTGQRGHKFWMNNNHZWWS3D&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_6&otracker=search&otracker1=search&fm=Search&iid=103e9a14-bdb9-4dc0-b326-7a4cfa93b61a.SHTGQRGHKFWMNNNH.SEARCH&ppt=sp&ppn=sp&qH=514ca2b2d46ccf67" class="btn btn-primary">Buy Now</a>
+          </div>
+          <form action="/cart" method="post">
+            <input  type="hidden" name="img" value="Dashboard/shirt5.jpg">
+            <input  type="hidden"  name="name" value="PopeLeo">
+            <input type="hidden" name="linkn" value="https://www.flipkart.com/zoitgiest-men-checkered-casual-multicolor-shirt/p/itmd4f89b743c1ca?pid=SHTGQRGHKFWMNNNH&lid=LSTSHTGQRGHKFWMNNNHZWWS3D&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_6&otracker=search&otracker1=search&fm=Search&iid=103e9a14-bdb9-4dc0-b326-7a4cfa93b61a.SHTGQRGHKFWMNNNH.SEARCH&ppt=sp&ppn=sp&qH=514ca2b2d46ccf67">
+            <input   id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+          </form>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img src="Dashboard/shirt6.jpg" class="card-img-top" width="100px" height="200px">
+          <div class="card-body">
+            <h5 class="card-title">BLUE MARTIN</h5>
+            <a href="https://www.flipkart.com/lembrika-men-printed-casual-white-green-orange-shirt/p/itm6332fd36e6bfa?pid=SHTGRZFTJMW7NEAG&lid=LSTSHTGRZFTJMW7NEAGTKV21K&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_1&otracker=AS_Query_HistoryAutoSuggest_6_0_na_na_na&otracker1=AS_Query_HistoryAutoSuggest_6_0_na_na_na&fm=Search&iid=en_4bGlATBf7Uw5rhVULoYNOqhpl9V4gVwu0_RVe3c4ZJPvxtHjll1Sosh-YVSqqX82OYWB1Pt9QH-csf7yOzbekw%3D%3D&ppt=hp&ppn=homepage&ssid=1817pskdgg0000001692529173643&qH=514ca2b2d46ccf67" class="btn btn-primary">Buy Now</a>
+          </div>
+          <form action="/cart" method="post">
+            <input  type="hidden" name="img" value="Dashboard/shirt6.jpg">
+            <input  type="hidden"  name="name" value="BLUE MARTIN">
+            <input type="hidden" name="linkn" value="https://www.flipkart.com/lembrika-men-printed-casual-white-green-orange-shirt/p/itm6332fd36e6bfa?pid=SHTGRZFTJMW7NEAG&lid=LSTSHTGRZFTJMW7NEAGTKV21K&marketplace=FLIPKART&q=shirts&store=clo%2Fash%2Faxc&srno=s_1_1&otracker=AS_Query_HistoryAutoSuggest_6_0_na_na_na&otracker1=AS_Query_HistoryAutoSuggest_6_0_na_na_na&fm=Search&iid=en_4bGlATBf7Uw5rhVULoYNOqhpl9V4gVwu0_RVe3c4ZJPvxtHjll1Sosh-YVSqqX82OYWB1Pt9QH-csf7yOzbekw%3D%3D&ppt=hp&ppn=homepage&ssid=1817pskdgg0000001692529173643&qH=514ca2b2d46ccf67">
+            <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+          </form>
+        </div>
+        </div>
+        <a name="pant"></a>
+        <div class="remstyle">
+            <div class="more">
+              <a href="https://www.flipkart.com/search?q=pants&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="more">View More</a>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/jeans1.jpg" class="card-img-top" width="500px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">JLzard</h5>
+                <a href="https://www.flipkart.com/plounge-regular-men-light-blue-jeans/p/itm2c8b146767ba9?pid=JEAG2UFYGVRYAHUH&lid=LSTJEAG2UFYGVRYAHUHRJBX4G&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_1&otracker=search&otracker1=search&fm=search-autosuggest&iid=en_HnPAHcixlpFwskAWd7BcOqdnxiiRwxImMZi0dtESBuSf_mVPAN0rdzJ35NOQGCyXAN1jSVa7pXKmhKedXTbJ_Q%3D%3D&ppt=sp&ppn=sp&ssid=8pf4x26n3k0000001692529215990&qH=88fd6d3f480e9bbe" class="btn btn-primary">Buy now</a>
+              </div>
+              <form action="/cart" method="post">
+                <input  type="hidden" name="img" value="Dashboard/jeans1.jpg">
+                <input  type="hidden"  name="name" value="JLzard">
+                <input type="hidden" name="linkn" value="https://www.flipkart.com/plounge-regular-men-light-blue-jeans/p/itm2c8b146767ba9?pid=JEAG2UFYGVRYAHUH&lid=LSTJEAG2UFYGVRYAHUHRJBX4G&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_1&otracker=search&otracker1=search&fm=search-autosuggest&iid=en_HnPAHcixlpFwskAWd7BcOqdnxiiRwxImMZi0dtESBuSf_mVPAN0rdzJ35NOQGCyXAN1jSVa7pXKmhKedXTbJ_Q%3D%3D&ppt=sp&ppn=sp&ssid=8pf4x26n3k0000001692529215990&qH=88fd6d3f480e9bbe">
+                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+              </form>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/jeans2.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Roadster</h5>
+                <a href="https://www.flipkart.com/plounge-regular-men-blue-jeans/p/itme715a0df724c7?pid=JEAGFGY2PQZ7HGFQ&lid=LSTJEAGFGY2PQZ7HGFQYXDDMX&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=en_HnPAHcixlpFwskAWd7BcOqdnxiiRwxImMZi0dtESBuTqe6zVqS4bpg9tAJpJKkh53Yl5KCp09DUxcQ15o33kGw%3D%3D&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe" class="btn btn-primary">Buy Now</a>
+              </div>
+              <form action="/cart" method="post">
+                <input  type="hidden" name="img" value="Dashboard/jeans2.jpg">
+                <input  type="hidden"  name="name" value="Roadster">
+                <input type="hidden" name="linkn" value="https://www.flipkart.com/plounge-regular-men-blue-jeans/p/itme715a0df724c7?pid=JEAGFGY2PQZ7HGFQ&lid=LSTJEAGFGY2PQZ7HGFQYXDDMX&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=en_HnPAHcixlpFwskAWd7BcOqdnxiiRwxImMZi0dtESBuTqe6zVqS4bpg9tAJpJKkh53Yl5KCp09DUxcQ15o33kGw%3D%3D&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe">
+                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+              </form>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/jeans3.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">FOSEN</h5>
+                <a href="https://www.flipkart.com/fosen-slim-men-black-jeans/p/itm2964f3b950c59?pid=JEAGFGXKZVHSJZZV&lid=LSTJEAGFGXKZVHSJZZV6P34SL&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&spotlightTagId=BestsellerId_clo%2Fvua%2Fk58%2Fi51&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=63243c42-bec1-486f-9d34-65f7bf06fe7b.JEAGFGXKZVHSJZZV.SEARCH&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe" class="btn btn-primary">Buy Now</a>
+              </div>
+              <form action="/cart" method="post">
+                <input  type="hidden" name="img" value="Dashboard/jeans3.jpg">
+                <input  type="hidden"  name="name" value="FOSEN">
+                <input type="hidden" name="linkn" value="https://www.flipkart.com/fosen-slim-men-black-jeans/p/itm2964f3b950c59?pid=JEAGFGXKZVHSJZZV&lid=LSTJEAGFGXKZVHSJZZV6P34SL&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&spotlightTagId=BestsellerId_clo%2Fvua%2Fk58%2Fi51&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=63243c42-bec1-486f-9d34-65f7bf06fe7b.JEAGFGXKZVHSJZZV.SEARCH&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe">
+                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+              </form>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/jeans4.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">KETCH </h5>
+                <a href="https://www.flipkart.com/fosen-slim-men-white-jeans/p/itm9df51ee415530?pid=JEAGZSAF45M74YMX&lid=LSTJEAGZSAF45M74YMXHMTUME&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=63243c42-bec1-486f-9d34-65f7bf06fe7b.JEAGZSAF45M74YMX.SEARCH&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe" class="btn btn-primary">Buy Now</a>
+              </div>
+              <form action="/cart" method="post">
+                <input  type="hidden" name="img" value="Dashboard/jeans4.jpg">
+                <input  type="hidden"  name="name" value="KETCH ">
+                <input type="hidden" name="linkn"  value="https://www.flipkart.com/fosen-slim-men-white-jeans/p/itm9df51ee415530?pid=JEAGZSAF45M74YMX&lid=LSTJEAGZSAF45M74YMXHMTUME&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=63243c42-bec1-486f-9d34-65f7bf06fe7b.JEAGZSAF45M74YMX.SEARCH&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe">
+                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+              </form>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/jeans5.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">HIGHLANDER</h5>
+                <a href="https://www.flipkart.com/crossedge-skinny-men-grey-jeans/p/itmd584cc0004c50?pid=JEAGPRKZ9JGBZYTC&lid=LSTJEAGPRKZ9JGBZYTC0T75EQ&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_10&otracker=search&otracker1=search&fm=Search&iid=63243c42-bec1-486f-9d34-65f7bf06fe7b.JEAGPRKZ9JGBZYTC.SEARCH&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe" class="btn btn-primary">Buy Now</a>
+              </div>
+              <form action="/cart" method="post">
+                <input  type="hidden" name="img" value="Dashboard/jeans5.jpg">
+                <input  type="hidden"  name="name" value="HIGHLANDER">
+                <input type="hidden" name="linkn" value="https://www.flipkart.com/crossedge-skinny-men-grey-jeans/p/itmd584cc0004c50?pid=JEAGPRKZ9JGBZYTC&lid=LSTJEAGPRKZ9JGBZYTC0T75EQ&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_10&otracker=search&otracker1=search&fm=Search&iid=63243c42-bec1-486f-9d34-65f7bf06fe7b.JEAGPRKZ9JGBZYTC.SEARCH&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe">
+                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+              </form>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/jeans6.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">BLUE MARTIN</h5>
+                <a href="https://www.flipkart.com/plounge-regular-men-dark-blue-jeans/p/itm7a991a7c6e1df?pid=JEAFN5SVUSURGCU4&lid=LSTJEAFN5SVUSURGCU4P5RQQ0&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_11&otracker=search&otracker1=search&fm=Search&iid=en_HnPAHcixlpFwskAWd7BcOqdnxiiRwxImMZi0dtESBuSHQSsYpTTuot1IOfuDHT07U1uGT5pKc-7G-ynv9EV0Hg%3D%3D&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe" class="btn btn-primary">Buy Now</a>
+              </div>
+              <form action="/cart" method="post">
+                <input  type="hidden" name="img" value="Dashboard/jeans6.jpg">
+                <input  type="hidden"  name="name" value="BLUE MARTIN">
+                <input type="hidden" name="linkn" value="https://www.flipkart.com/plounge-regular-men-dark-blue-jeans/p/itm7a991a7c6e1df?pid=JEAFN5SVUSURGCU4&lid=LSTJEAFN5SVUSURGCU4P5RQQ0&marketplace=FLIPKART&q=jeans++pantsmens&store=clo%2Fvua%2Fk58%2Fi51&srno=s_1_11&otracker=search&otracker1=search&fm=Search&iid=en_HnPAHcixlpFwskAWd7BcOqdnxiiRwxImMZi0dtESBuSHQSsYpTTuot1IOfuDHT07U1uGT5pKc-7G-ynv9EV0Hg%3D%3D&ppt=sp&ppn=sp&qH=88fd6d3f480e9bbe">
+                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+              </form>
+            </div>
+            </div> 
+            <a name="dress"></a>
+            <div class="remstyle">
+                <div class="more">
+                  <a href="https://www.flipkart.com/search?q=dress+for+women&sid=clo%2Codx%2Cmaj%2Cjhy&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&as-pos=1&as-type=RECENT&suggestionId=dress+for+women%7CWomen%27s+Dresses&requestId=09cc5644-fbea-45e1-ab77-0223f583b0c7&as-searchtext=drss%20" class="more">View More</a>
+                </div>
+                <div class="card" style="width: 25rem;">
+                  <img src="Dashboard/dress1.jpg" class="card-img-top" width="500px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Modern dress</h5>
+            <a href="https://www.flipkart.com/gurhal-polycotton-embroidered-salwar-suit-material/p/itm23e57a1b97a81?pid=FABGHBSDJGVQGFTQ&lid=LSTFABGHBSDJGVQGFTQRNEDXT&marketplace=FLIPKART&q=dress+materials&store=clo%2Fqfi%2Fxcx%2Fms4&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=en_4QpmDMFGyJcRe80S_YXd6ZkwVhhtMHoKBIVfRF_451TCkKCNt-x6znuKu-hTgUkSp7sYWYrsn8xccHenT-mKqw%3D%3D&ppt=sp&ppn=sp&ssid=5cd9ifsnwg0000001692529372565&qH=573ad04590dd9d3b" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/dress1.jpg">
+                    <input  type="hidden"  name="name" value="Modern dress">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/gurhal-polycotton-embroidered-salwar-suit-material/p/itm23e57a1b97a81?pid=FABGHBSDJGVQGFTQ&lid=LSTFABGHBSDJGVQGFTQRNEDXT&marketplace=FLIPKART&q=dress+materials&store=clo%2Fqfi%2Fxcx%2Fms4&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=en_4QpmDMFGyJcRe80S_YXd6ZkwVhhtMHoKBIVfRF_451TCkKCNt-x6znuKu-hTgUkSp7sYWYrsn8xccHenT-mKqw%3D%3D&ppt=sp&ppn=sp&ssid=5cd9ifsnwg0000001692529372565&qH=573ad04590dd9d3b">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/dress2.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Stylish</h5>
+                    <a href="https://www.flipkart.com/gurhal-polycotton-embroidered-salwar-suit-material/p/itmcc31acd75a3c6?pid=FABGBAU524SMFRHA&lid=LSTFABGBAU524SMFRHARPJRU1&marketplace=FLIPKART&q=dress%20materials&sattr[]=color&st=color" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/dress2.jpg">
+                    <input  type="hidden"  name="name" value="Stylish">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/gurhal-polycotton-embroidered-salwar-suit-material/p/itmcc31acd75a3c6?pid=FABGBAU524SMFRHA&lid=LSTFABGBAU524SMFRHARPJRU1&marketplace=FLIPKART&q=dress%20materials&sattr[]=color&st=color">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/dress3.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">modern</h5>
+                    <a href="https://www.flipkart.com/nirvaan-crepe-printed-salwar-suit-material/p/itm886bc8c5c5dcd?pid=FABGQBQF988JRM6Q&lid=LSTFABGQBQF988JRM6QKIYADK&marketplace=FLIPKART&q=dress+materials&store=clo%2Fqfi%2Fxcx%2Fms4&srno=s_1_7&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=3007c7db-a82a-4089-b260-37c46a5dae78.FABGQBQF988JRM6Q.SEARCH&ppt=sp&ppn=sp&qH=573ad04590dd9d3b" class="btn btn-primary">Buy bow</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/dress3.jpg">
+                    <input  type="hidden"  name="name" value="modern">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/nirvaan-crepe-printed-salwar-suit-material/p/itm886bc8c5c5dcd?pid=FABGQBQF988JRM6Q&lid=LSTFABGQBQF988JRM6QKIYADK&marketplace=FLIPKART&q=dress+materials&store=clo%2Fqfi%2Fxcx%2Fms4&srno=s_1_7&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=3007c7db-a82a-4089-b260-37c46a5dae78.FABGQBQF988JRM6Q.SEARCH&ppt=sp&ppn=sp&qH=573ad04590dd9d3b">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/kid1.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Kids wear</h5>
+                    <a href="https://www.flipkart.com/good-doo-apparel-s-boys-casual-jacket-jeans-shirt/p/itm7dce8835683a5?pid=KPBGE8FGWNKQ3PJ8&lid=LSTKPBGE8FGWNKQ3PJ8OVZVLO&marketplace=FLIPKART&q=kids+wear&store=clo&srno=s_1_11&otracker=search&otracker1=search&fm=Search&iid=en_4FehDatdxxOi0udrFutk_rZ6yzmmc1YCs0UKmNfwZhEQgPmpscrm1DUxH2OLgIX2wtGYZeS3pGzf5FhlR2A9cw%3D%3D&ppt=sp&ppn=sp&ssid=k8gu6j5kw00000001692529551879&qH=399043d26a809ab4" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/kid1.jpg">
+                    <input  type="hidden"  name="name" value="Kids wear">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/good-doo-apparel-s-boys-casual-jacket-jeans-shirt/p/itm7dce8835683a5?pid=KPBGE8FGWNKQ3PJ8&lid=LSTKPBGE8FGWNKQ3PJ8OVZVLO&marketplace=FLIPKART&q=kids+wear&store=clo&srno=s_1_11&otracker=search&otracker1=search&fm=Search&iid=en_4FehDatdxxOi0udrFutk_rZ6yzmmc1YCs0UKmNfwZhEQgPmpscrm1DUxH2OLgIX2wtGYZeS3pGzf5FhlR2A9cw%3D%3D&ppt=sp&ppn=sp&ssid=k8gu6j5kw00000001692529551879&qH=399043d26a809ab4">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/kid2.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Kids popular</h5>
+                    <a href="https://www.flipkart.com/fastcolors-boys-girls-casual-t-shirt-track-pants/p/itm8741d8b4ecc35?pid=KPBGBUGDURDSKCBK&lid=LSTKPBGBUGDURDSKCBKEXKSKL&marketplace=FLIPKART&q=kids+wear&store=clo&srno=s_1_27&otracker=search&otracker1=search&fm=Search&iid=en_4FehDatdxxOi0udrFutk_rZ6yzmmc1YCs0UKmNfwZhHOMKBpD388kWJhE-jFKvZ6FDJ_76rUCgs8ejucnFjoAQ%3D%3D&ppt=sp&ppn=sp&qH=399043d26a809ab4" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/kid2.jpg">
+                    <input  type="hidden"  name="name" value="Kids popular">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/fastcolors-boys-girls-casual-t-shirt-track-pants/p/itm8741d8b4ecc35?pid=KPBGBUGDURDSKCBK&lid=LSTKPBGBUGDURDSKCBKEXKSKL&marketplace=FLIPKART&q=kids+wear&store=clo&srno=s_1_27&otracker=search&otracker1=search&fm=Search&iid=en_4FehDatdxxOi0udrFutk_rZ6yzmmc1YCs0UKmNfwZhHOMKBpD388kWJhE-jFKvZ6FDJ_76rUCgs8ejucnFjoAQ%3D%3D&ppt=sp&ppn=sp&qH=399043d26a809ab4">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/kid3.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Best One</h5>
+                    <a href="https://www.flipkart.com/naivety-indi-girls-midi-knee-length-casual-dress/p/itm10248ed927211?pid=KDEGKMMV28QXWXZ7&lid=LSTKDEGKMMV28QXWXZ7VEXSJZ&marketplace=FLIPKART&q=kids+dress&store=clo%2Fodx%2Fmaj%2Fzc1&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_3tyKAh6TONkL5rxPrrBX4ftaYmPjQVoHi4kWkvDjt7irAZbVFu1YSYNXVewcyDxkqvkCKFLRTvXgmHi7GBNg1g%3D%3D&ppt=sp&ppn=sp&ssid=3g332sd5kg0000001692529711961&qH=04b5db8f081f7608" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/kid3.jpg">
+                    <input  type="hidden"  name="name" value="Best One">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/naivety-indi-girls-midi-knee-length-casual-dress/p/itm10248ed927211?pid=KDEGKMMV28QXWXZ7&lid=LSTKDEGKMMV28QXWXZ7VEXSJZ&marketplace=FLIPKART&q=kids+dress&store=clo%2Fodx%2Fmaj%2Fzc1&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_3tyKAh6TONkL5rxPrrBX4ftaYmPjQVoHi4kWkvDjt7irAZbVFu1YSYNXVewcyDxkqvkCKFLRTvXgmHi7GBNg1g%3D%3D&ppt=sp&ppn=sp&ssid=3g332sd5kg0000001692529711961&qH=04b5db8f081f7608">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                </div>
+                <a name="Electronics"></a>
+            <div class="remstyle">
+                <div class="more">
+                  <a href="https://www.flipkart.com/offers-list/content?screen=dynamic&pk=themeViews%3DDT-OMU-1%3ADealcard~widgetType%3DdealCard~contentType%3Dneo&wid=2.dealCard.OMU&wid=3.dealCard.OMU_3&otracker=hp_omu_Best%2Bof%2BElectronics_3&otracker1=hp_omu_PINNED_neo%2Fmerchandising_Best%2Bof%2BElectronics_NA_wc_view-all_3" class="more">View More</a>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/tv1.jpg" class="card-img-top" width="500px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Sony</h5>
+                    <a href="flipkart.com/sens-pikaso-140-cm-55-inch-ultra-hd-4k-led-smart-android-tv-flurosens-panel-dolby-audio-dts/p/itmf9a9ee7bca957?pid=TVSGHY2BVYAS9FRS&lid=LSTTVSGHY2BVYAS9FRSB4RIY5&marketplace=FLIPKART&q=sony+tv&store=ckf%2Fczl&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_XXQqmMLAe8u-QK8H1R0aB2R3C78C_0r4QQBIPEjmZ15Ty1meUxeGssnPBAN7kuHUB9rxTtjwwUI0dnw5D67kZQ%3D%3D&ppt=sp&ppn=sp&ssid=wl8wq0w6io0000001692529748790&qH=2d67b743887c9734" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/tv1.jpg">
+                    <input  type="hidden"  name="name" value="Sony">
+                    <input type="hidden" name="linkn" value="flipkart.com/sens-pikaso-140-cm-55-inch-ultra-hd-4k-led-smart-android-tv-flurosens-panel-dolby-audio-dts/p/itmf9a9ee7bca957?pid=TVSGHY2BVYAS9FRS&lid=LSTTVSGHY2BVYAS9FRSB4RIY5&marketplace=FLIPKART&q=sony+tv&store=ckf%2Fczl&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_XXQqmMLAe8u-QK8H1R0aB2R3C78C_0r4QQBIPEjmZ15Ty1meUxeGssnPBAN7kuHUB9rxTtjwwUI0dnw5D67kZQ%3D%3D&ppt=sp&ppn=sp&ssid=wl8wq0w6io0000001692529748790&qH=2d67b743887c9734">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/tv2.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">LG</h5>
+                    <a href="https://www.flipkart.com/lg-uq7500-108-cm-43-inch-ultra-hd-4k-led-smart-webos-tv-2022-filmmaker-mode-ai-sound-active-hdr/p/itm73d699fb5f799?pid=TVSGFGYS5TJRUJNV&lid=LSTTVSGFGYS5TJRUJNVLCTYNB&marketplace=FLIPKART&q=lg+tv&store=ckf%2Fczl&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=cf0fb6d7-081d-406c-a853-ecbc0409c6c8.TVSGFGYS5TJRUJNV.SEARCH&ppt=sp&ppn=sp&ssid=vsi798lwe80000001692529781663&qH=0e9823883e72a0ba" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/tv2.jpg">
+                    <input  type="hidden"  name="name" value="LG">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/lg-uq7500-108-cm-43-inch-ultra-hd-4k-led-smart-webos-tv-2022-filmmaker-mode-ai-sound-active-hdr/p/itm73d699fb5f799?pid=TVSGFGYS5TJRUJNV&lid=LSTTVSGFGYS5TJRUJNVLCTYNB&marketplace=FLIPKART&q=lg+tv&store=ckf%2Fczl&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=cf0fb6d7-081d-406c-a853-ecbc0409c6c8.TVSGFGYS5TJRUJNV.SEARCH&ppt=sp&ppn=sp&ssid=vsi798lwe80000001692529781663&qH=0e9823883e72a0ba">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/wash1.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">IFB Front door</h5>
+                    <a href="https://www.flipkart.com/ifb-6-kg-steam-wash-hard-water-active-color-protection-4-years-comprehensive-warranty-fully-automatic-front-load-washing-machine-in-built-heater-white/p/itm3bf21ef8dc5e7?pid=WMNGDMYHAKGZHEPK&lid=LSTWMNGDMYHAKGZHEPKZXNDIY&marketplace=FLIPKART&q=ifb+washing+machine&store=j9e%2Fabm%2F8qx&spotlightTagId=FkPickId_j9e%2Fabm%2F8qx&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=search-autosuggest&iid=32c3ab99-81c7-4655-a2a9-76e2705aec17.WMNGDMYHAKGZHEPK.SEARCH&ppt=sp&ppn=sp&ssid=jpho4k3um80000001692529827246&qH=9a67f7bff9bd5cea" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/wash1.jpg">
+                    <input  type="hidden"  name="name" value="IFB Front door">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/ifb-6-kg-steam-wash-hard-water-active-color-protection-4-years-comprehensive-warranty-fully-automatic-front-load-washing-machine-in-built-heater-white/p/itm3bf21ef8dc5e7?pid=WMNGDMYHAKGZHEPK&lid=LSTWMNGDMYHAKGZHEPKZXNDIY&marketplace=FLIPKART&q=ifb+washing+machine&store=j9e%2Fabm%2F8qx&spotlightTagId=FkPickId_j9e%2Fabm%2F8qx&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=search-autosuggest&iid=32c3ab99-81c7-4655-a2a9-76e2705aec17.WMNGDMYHAKGZHEPK.SEARCH&ppt=sp&ppn=sp&ssid=jpho4k3um80000001692529827246&qH=9a67f7bff9bd5cea">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/wash2.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">SAMSUNG Top door</h5>
+                    <a href="https://www.flipkart.com/samsung-7-kg-5-star-ecobubble-digital-inverter-fully-automatic-top-load-washing-machine-grey/p/itmfad620b791ea9?pid=WMNGGUWZK6VEQPXD&lid=LSTWMNGGUWZK6VEQPXDBGVOA0&marketplace=FLIPKART&q=samsung+top+load&store=j9e%2Fabm%2F8qx&spotlightTagId=FkPickId_j9e%2Fabm%2F8qx&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_ps&fm=search-autosuggest&iid=fd906136-b880-40ee-834a-c82284a930f7.WMNGGUWZK6VEQPXD.SEARCH&ppt=sp&ppn=sp&ssid=fm4gvx69cw0000001692529915018&qH=711423440061f673" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/wash2.jpg">
+                    <input  type="hidden"  name="name" value="SAMSUNG Top door">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/samsung-7-kg-5-star-ecobubble-digital-inverter-fully-automatic-top-load-washing-machine-grey/p/itmfad620b791ea9?pid=WMNGGUWZK6VEQPXD&lid=LSTWMNGGUWZK6VEQPXDBGVOA0&marketplace=FLIPKART&q=samsung+top+load&store=j9e%2Fabm%2F8qx&spotlightTagId=FkPickId_j9e%2Fabm%2F8qx&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_ps&fm=search-autosuggest&iid=fd906136-b880-40ee-834a-c82284a930f7.WMNGGUWZK6VEQPXD.SEARCH&ppt=sp&ppn=sp&ssid=fm4gvx69cw0000001692529915018&qH=711423440061f673">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/fridge1.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">LG</h5>
+                    <a href="https://www.flipkart.com/lg-242-l-frost-free-double-door-3-star-refrigerator-smart-inverter/p/itme01a20547384b?pid=RFRGYRZDBHUEFEFW&lid=LSTRFRGYRZDBHUEFEFWXEFAHP&marketplace=FLIPKART&q=lg+fridge&store=j9e%2Fabm%2Fhzg&spotlightTagId=FkPickId_j9e%2Fabm%2Fhzg&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=aab0d5b8-2f43-47ab-8777-ca9bd06ccca8.RFRGYRZDBHUEFEFW.SEARCH&ppt=sp&ppn=sp&ssid=n501aar4e80000001692529948801&qH=61727606d2620da2" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/fridge1.jpg">
+                    <input  type="hidden"  name="name" value="LG">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/lg-242-l-frost-free-double-door-3-star-refrigerator-smart-inverter/p/itme01a20547384b?pid=RFRGYRZDBHUEFEFW&lid=LSTRFRGYRZDBHUEFEFWXEFAHP&marketplace=FLIPKART&q=lg+fridge&store=j9e%2Fabm%2Fhzg&spotlightTagId=FkPickId_j9e%2Fabm%2Fhzg&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=aab0d5b8-2f43-47ab-8777-ca9bd06ccca8.RFRGYRZDBHUEFEFW.SEARCH&ppt=sp&ppn=sp&ssid=n501aar4e80000001692529948801&qH=61727606d2620da2">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                <div class="card" style="width: 20rem;">
+                  <img src="Dashboard/fridge2.jpg" class="card-img-top" width="100px" height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Voltas</h5>
+                    <a href="https://www.flipkart.com/lg-185-l-direct-cool-single-door-5-star-refrigerator/p/itmaea4f6a44d258?pid=RFRGZMS7P4AXVPF6&lid=LSTRFRGZMS7P4AXVPF6TFOSWM&marketplace=FLIPKART&q=lg+fridge&store=j9e%2Fabm%2Fhzg&spotlightTagId=BestsellerId_j9e%2Fabm%2Fhzg&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=aab0d5b8-2f43-47ab-8777-ca9bd06ccca8.RFRGZMS7P4AXVPF6.SEARCH&ppt=sp&ppn=sp&ssid=n501aar4e80000001692529948801&qH=61727606d2620da2" class="btn btn-primary">Buy now</a>
+                  </div>
+                  <form action="/cart" method="post">
+                    <input  type="hidden" name="img" value="Dashboard/fridge2.jpg">
+                    <input  type="hidden"  name="name" value="Voltas">
+                    <input type="hidden" name="linkn" value="https://www.flipkart.com/lg-185-l-direct-cool-single-door-5-star-refrigerator/p/itmaea4f6a44d258?pid=RFRGZMS7P4AXVPF6&lid=LSTRFRGZMS7P4AXVPF6TFOSWM&marketplace=FLIPKART&q=lg+fridge&store=j9e%2Fabm%2Fhzg&spotlightTagId=BestsellerId_j9e%2Fabm%2Fhzg&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=aab0d5b8-2f43-47ab-8777-ca9bd06ccca8.RFRGZMS7P4AXVPF6.SEARCH&ppt=sp&ppn=sp&ssid=n501aar4e80000001692529948801&qH=61727606d2620da2">
+                    <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                  </form>
+                </div>
+                </div>
+                <a name="mobile"></a>
+                <div class="remstyle">
+                    <div class="more">
+                      <a href="https://www.flipkart.com/search?q=mobiles%205g&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="more">View More</a>
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                      <img src="Dashboard/mobile.jpg" class="card-img-top" width="500px" height="200px">
+                      <div class="card-body">
+                        <h5 class="card-title">IPhone</h5>
+                        <a href="https://www.flipkart.com/apple-iphone-12-white-128-gb/p/itm95393f4c6cc59?pid=MOBFWBYZBTZFGJF9&lid=LSTMOBFWBYZBTZFGJF9RAHZAK&marketplace=FLIPKART&q=i+phone+12+128bg&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&fm=search-autosuggest&iid=534ad3dc-c5ea-4d9a-b2e4-70929158fbd3.MOBFWBYZBTZFGJF9.SEARCH&ppt=sp&ppn=sp&ssid=l2g4wlav340000001692530002272&qH=c20b8b7bfa59da65" class="btn btn-primary">Buy now</a>
+                      </div>
+                      <form action="/cart" method="post">
+                        <input  type="hidden" name="img" value="Dashboard/mobile.jpg">
+                        <input  type="hidden"  name="name" value="IPhone">
+                        <input type="hidden" name="linkn" value="https://www.flipkart.com/apple-iphone-12-white-128-gb/p/itm95393f4c6cc59?pid=MOBFWBYZBTZFGJF9&lid=LSTMOBFWBYZBTZFGJF9RAHZAK&marketplace=FLIPKART&q=i+phone+12+128bg&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&fm=search-autosuggest&iid=534ad3dc-c5ea-4d9a-b2e4-70929158fbd3.MOBFWBYZBTZFGJF9.SEARCH&ppt=sp&ppn=sp&ssid=l2g4wlav340000001692530002272&qH=c20b8b7bfa59da65">
+                        <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                      </form>
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                      <img src="Dashboard/mobile1.jpg" class="card-img-top" width="100px" height="200px">
+                      <div class="card-body">
+                        <h5 class="card-title">Redmi Note 11t 5G</h5>
+                        <a href="https://www.flipkart.com/redmi-note-11t-5g-matte-black-128-gb/p/itm7ce40aba5696c?pid=MOBGHDXFFRRADZDZ&lid=LSTMOBGHDXFFRRADZDZRCYGLQ&marketplace=FLIPKART&q=redmi+note+11t5g&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_14_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_14_na_na_ps&fm=search-autosuggest&iid=3cdddb16-1e74-4de8-b574-63c7f76fc3b1.MOBGHDXFFRRADZDZ.SEARCH&ppt=sp&ppn=sp&ssid=vejcnp859s0000001692530040516&qH=555d4ca54560a22c" class="btn btn-primary">Buy now</a>
+                      </div>
+                      <form action="/cart" method="post">
+                        <input  type="hidden" name="img" value="Dashboard/mobile1.jpg">
+                        <input  type="hidden"  name="name" value="Redmi Note 11t 5G">
+                        <input type="hidden" name="linkn" value="https://www.flipkart.com/redmi-note-11t-5g-matte-black-128-gb/p/itm7ce40aba5696c?pid=MOBGHDXFFRRADZDZ&lid=LSTMOBGHDXFFRRADZDZRCYGLQ&marketplace=FLIPKART&q=redmi+note+11t5g&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_14_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_14_na_na_ps&fm=search-autosuggest&iid=3cdddb16-1e74-4de8-b574-63c7f76fc3b1.MOBGHDXFFRRADZDZ.SEARCH&ppt=sp&ppn=sp&ssid=vejcnp859s0000001692530040516&qH=555d4ca54560a22c">
+                        <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                      </form>
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                      <img src="Dashboard/laptop1.jpg" class="card-img-top" width="100px" height="200px">
+                      <div class="card-body">
+                        <h5 class="card-title">HP I5 Windows 12</h5>
+                        <a href="https://www.flipkart.com/hp-15s-2023-intel-core-i5-12th-gen-8-gb-512-gb-ssd-windows-11-home-15s-fy5002tu-thin-light-laptop/p/itm9a26c0851d4e0?pid=COMGZNSBS7Z959EW&lid=LSTCOMGZNSBS7Z959EWSIWM8I&marketplace=FLIPKART&q=hp+i5+12th+gen&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=search-autosuggest&iid=4c487574-97bd-4a33-a2e3-3219ecc19e38.COMGZNSBS7Z959EW.SEARCH&ppt=sp&ppn=sp&ssid=8z4qnzqjdc0000001692530070755&qH=1c296aff31b57ad7" class="btn btn-primary">Buy now</a>
+                      </div>
+                      <form action="/cart" method="post">
+                        <input  type="hidden" name="img" value="Dashboard/laptop1.jpg">
+                        <input  type="hidden"  name="name" value="HP I5 Windows 12">
+                        <input type="hidden" name="linkn" value="https://www.flipkart.com/hp-15s-2023-intel-core-i5-12th-gen-8-gb-512-gb-ssd-windows-11-home-15s-fy5002tu-thin-light-laptop/p/itm9a26c0851d4e0?pid=COMGZNSBS7Z959EW&lid=LSTCOMGZNSBS7Z959EWSIWM8I&marketplace=FLIPKART&q=hp+i5+12th+gen&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=search-autosuggest&iid=4c487574-97bd-4a33-a2e3-3219ecc19e38.COMGZNSBS7Z959EW.SEARCH&ppt=sp&ppn=sp&ssid=8z4qnzqjdc0000001692530070755&qH=1c296aff31b57ad7">
+                        <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                      </form>
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                      <img src="Dashboard/laptop2.jpg" class="card-img-top" width="100px" height="200px">
+                      <div class="card-body">
+                        <h5 class="card-title">MAC Book</h5>
+                        <a href="https://www.flipkart.com/apple-2020-macbook-air-m1-8-gb-256-gb-ssd-mac-os-big-sur-mgn63hn-a/p/itmde54f026889ce?pid=COMFXEKMGNHZYFH9&lid=LSTCOMFXEKMGNHZYFH9P56X45&marketplace=FLIPKART&q=mac+book&store=6bo&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=250dc8c9-5ea0-48aa-b0f4-9033e61f10ec.COMFXEKMGNHZYFH9.SEARCH&ppt=sp&ppn=sp&ssid=0yd5dmijgw0000001692530093020&qH=e1dadd2eac76bb48" class="btn btn-primary">Buy now</a>
+                      </div>
+                      <form action="/cart" method="post">
+                        <input  type="hidden" name="img" value="Dashboard/laptop2.jpg">
+                        <input  type="hidden"  name="name" value="MAC Book">
+                        <input type="hidden" name="linkn" value="https://www.flipkart.com/apple-2020-macbook-air-m1-8-gb-256-gb-ssd-mac-os-big-sur-mgn63hn-a/p/itmde54f026889ce?pid=COMFXEKMGNHZYFH9&lid=LSTCOMFXEKMGNHZYFH9P56X45&marketplace=FLIPKART&q=mac+book&store=6bo&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=250dc8c9-5ea0-48aa-b0f4-9033e61f10ec.COMFXEKMGNHZYFH9.SEARCH&ppt=sp&ppn=sp&ssid=0yd5dmijgw0000001692530093020&qH=e1dadd2eac76bb48">
+                        <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                      </form>
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                      <img src="Dashboard/bud1.jpg" class="card-img-top" width="100px" height="200px">
+                      <div class="card-body">
+                        <h5 class="card-title">Boat</h5>
+                        <a href="https://www.flipkart.com/boat-airdopes-131-pro-11mm-drivers-45hrs-playback-asap-charge-quad-mic-enx-bluetooth-headset/p/itm1a459c27ec5df?pid=ACCGDQMA9QHE6D5C&lid=LSTACCGDQMA9QHE6D5CDPMA74&marketplace=FLIPKART&q=buds&store=0pm&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_lmpF9BJ1jCo1n-3i4K_an79iB6vGprMbM2oMa9_R_PFp-0nSX4M2S-MRFYMkHLn3XlIjiqVlbsrLXh68DTDiSA%3D%3D&ppt=sp&ppn=sp&ssid=1stpjz4ka80000001692530123582&qH=af72d0de2dddfb43" class="btn btn-primary">Buy now</a>
+                      </div>
+                      <form action="/cart" method="post">
+                        <input  type="hidden" name="img" value="Dashboard/bud1.jpg">
+                        <input  type="hidden"  name="name" value="Boat">
+                        <input type="hidden" name="linkn" value="https://www.flipkart.com/boat-airdopes-131-pro-11mm-drivers-45hrs-playback-asap-charge-quad-mic-enx-bluetooth-headset/p/itm1a459c27ec5df?pid=ACCGDQMA9QHE6D5C&lid=LSTACCGDQMA9QHE6D5CDPMA74&marketplace=FLIPKART&q=buds&store=0pm&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_lmpF9BJ1jCo1n-3i4K_an79iB6vGprMbM2oMa9_R_PFp-0nSX4M2S-MRFYMkHLn3XlIjiqVlbsrLXh68DTDiSA%3D%3D&ppt=sp&ppn=sp&ssid=1stpjz4ka80000001692530123582&qH=af72d0de2dddfb43">
+                        <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                      </form>
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                      <img src="Dashboard/bud2.jpg" class="card-img-top" width="100px" height="200px">
+                      <div class="card-body">
+                        <h5 class="card-title">Txor</h5>
+                        <a href="https://www.flipkart.com/upoza-new-airypod-neckband-earbuds-tws-buds-5-1-earbuds-30h-playtime-headphones-bluetooth-headset/p/itm7b572d1760972?pid=ACCGQZ5HGUQGH8BS&lid=LSTACCGQZ5HGUQGH8BS1LY7PA&marketplace=FLIPKART&q=buds&store=0pm&srno=s_1_16&otracker=search&otracker1=search&fm=Search&iid=4b3d5005-7fec-4362-9880-90709df7cc10.ACCGQZ5HGUQGH8BS.SEARCH&ppt=sp&ppn=sp&qH=af72d0de2dddfb43" class="btn btn-primary">Buy now</a>
+                      </div>
+                      <form action="/cart" method="post">
+                        <input  type="hidden" name="img" value="Dashboard/bud2.jpg">
+                        <input  type="hidden"  name="name" value="Txor">
+                        <input type="hidden" name="linkn" value="https://www.flipkart.com/upoza-new-airypod-neckband-earbuds-tws-buds-5-1-earbuds-30h-playtime-headphones-bluetooth-headset/p/itm7b572d1760972?pid=ACCGQZ5HGUQGH8BS&lid=LSTACCGQZ5HGUQGH8BS1LY7PA&marketplace=FLIPKART&q=buds&store=0pm&srno=s_1_16&otracker=search&otracker1=search&fm=Search&iid=4b3d5005-7fec-4362-9880-90709df7cc10.ACCGQZ5HGUQGH8BS.SEARCH&ppt=sp&ppn=sp&qH=af72d0de2dddfb43">
+                        <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                      </form>
+                    </div>
+                    </div>
+                    <a name="pickup"></a>
+                    <div class="remstyle">
+                        <div class="more">
+                          <a href="https://www.flipkart.com/search?q=glasses&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="more">View More</a>
+                        </div>
+                        <div class="card" style="width: 20rem;">
+                          <img src="Dashboard/glass1.jpg" class="card-img-top" width="500px" height="200px">
+                          <div class="card-body">
+                            <h5 class="card-title">Sun Glasses</h5>
+                            <a href="https://www.flipkart.com/metronaut-uv-protection-sunglass/p/itm55a79fec3c250?pid=SGLGEERZCJKACGMA&lid=LSTSGLGEERZCJKACGMAJXCG9S&marketplace=FLIPKART&q=sun+glasses+for+men&store=26x&srno=s_1_4&otracker=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_na&fm=search-autosuggest&iid=99874873-ee72-4bfb-8dcd-c4fc00df6f68.SGLGEERZCJKACGMA.SEARCH&ppt=sp&ppn=sp&ssid=113jj7249s0000001692530201700&qH=7c16fbd4f968133b" class="btn btn-primary">Buy now</a>
+                          </div>
+                          <form action="/cart" method="post">
+                            <input  type="hidden" name="img" value="Dashboard/glass1.jpg">
+                            <input  type="hidden"  name="name" value="Sun Glasses">
+                            <input type="hidden" name="linkn" value="https://www.flipkart.com/metronaut-uv-protection-sunglass/p/itm55a79fec3c250?pid=SGLGEERZCJKACGMA&lid=LSTSGLGEERZCJKACGMAJXCG9S&marketplace=FLIPKART&q=sun+glasses+for+men&store=26x&srno=s_1_4&otracker=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_na&fm=search-autosuggest&iid=99874873-ee72-4bfb-8dcd-c4fc00df6f68.SGLGEERZCJKACGMA.SEARCH&ppt=sp&ppn=sp&ssid=113jj7249s0000001692530201700&qH=7c16fbd4f968133b">
+                            <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                          </form>
+                        </div>
+                        <div class="card" style="width: 20rem;">
+                          <img src="Dashboard/belt1.jpg" class="card-img-top" width="100px" height="200px">
+                          <div class="card-body">
+                            <h5 class="card-title">Belt</h5>
+                            <a href="https://www.flipkart.com/kaezri-men-evening-party-formal-casual-black-genuine-leather-belt/p/itm0dea7a7fc91df?pid=BELG6AUJDYVWNHHY&lid=LSTBELG6AUJDYVWNHHYRSB9CP&marketplace=FLIPKART&q=belts+for+men&store=reh%2Fro3&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_cQfyBgAZJknYfeeXtJb4T1WexSRB7J3h8NOKVJd6PtsfydQMkKnFCdGJu09qxezy8YCKpokOGCYtGxJmlmOUhw%3D%3D&ppt=sp&ppn=sp&ssid=zklxmbp2ww0000001692530239400&qH=4a1d970002c89ebc" class="btn btn-primary">Buy now</a>
+                          </div>
+                          <form action="/cart" method="post">
+                            <input  type="hidden" name="img" value="Dashboard/belt1.jpg">
+                            <input  type="hidden"  name="name" value="Belt">
+                            <input type="hidden" name="linkn" value="https://www.flipkart.com/kaezri-men-evening-party-formal-casual-black-genuine-leather-belt/p/itm0dea7a7fc91df?pid=BELG6AUJDYVWNHHY&lid=LSTBELG6AUJDYVWNHHYRSB9CP&marketplace=FLIPKART&q=belts+for+men&store=reh%2Fro3&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_cQfyBgAZJknYfeeXtJb4T1WexSRB7J3h8NOKVJd6PtsfydQMkKnFCdGJu09qxezy8YCKpokOGCYtGxJmlmOUhw%3D%3D&ppt=sp&ppn=sp&ssid=zklxmbp2ww0000001692530239400&qH=4a1d970002c89ebc">
+                            <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                          </form>
+                        </div>
+                        <div class="card" style="width: 20rem;">
+                          <img src="Dashboard/watch1.jpg" class="card-img-top" width="100px" height="200px">
+                          <div class="card-body">
+                            <h5 class="card-title">Club 96</h5>
+                            <a href="https://www.flipkart.com/knack-analog-watch-men/p/itm6a57ef27de8a1?pid=WATEXKHHZ3B7KZSR&lid=LSTWATEXKHHZ3B7KZSRXNJVOA&marketplace=FLIPKART&q=watches&store=r18&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=en_aH_LJf8m4GxCmuHbxFhsUeq1qg3GqxRb1tjq-N_6N6WqIkBVljNUxeOCAG-NRfFYaEV-dYYLa9t-XOOgmaQ11w%3D%3D&ppt=sp&ppn=sp&ssid=twmtqy7cbk0000001692530283672&qH=2d6b6aad43dffa91" class="btn btn-primary">Buy now</a>
+                          </div>
+                          <form action="/cart" method="post">
+                            <input  type="hidden" name="img" value="Dashboard/watch1.jpg">
+                            <input  type="hidden"  name="name" value="Club 96">
+                            <input type="hidden" name="linkn" value="https://www.flipkart.com/knack-analog-watch-men/p/itm6a57ef27de8a1?pid=WATEXKHHZ3B7KZSR&lid=LSTWATEXKHHZ3B7KZSRXNJVOA&marketplace=FLIPKART&q=watches&store=r18&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=en_aH_LJf8m4GxCmuHbxFhsUeq1qg3GqxRb1tjq-N_6N6WqIkBVljNUxeOCAG-NRfFYaEV-dYYLa9t-XOOgmaQ11w%3D%3D&ppt=sp&ppn=sp&ssid=twmtqy7cbk0000001692530283672&qH=2d6b6aad43dffa91">
+                            <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                          </form>
+                        </div>
+                        <div class="card" style="width: 20rem;">
+                          <img src="Dashboard/watch2.jpg" class="card-img-top" width="100px" height="200px">
+                          <div class="card-body">
+                            <h5 class="card-title">Lime Stone</h5>
+                            <a href="https://www.flipkart.com/analogue-all-matte-grey-elegant-series-water-resistant-1-year-quartz-machinery-warranty-analog-watch-boys/p/itm15c31cc4ff54d?pid=WATGYZRPJGZQNQMF&lid=LSTWATGYZRPJGZQNQMFPHIXKX&marketplace=FLIPKART&q=watches&store=r18&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_aH_LJf8m4GxCmuHbxFhsUeq1qg3GqxRb1tjq-N_6N6XrfeZLwOUqpReoIk6Tc_XaMpPmCrh2GBjc-HJ1WnH2QA%3D%3D&ppt=sp&ppn=sp&qH=2d6b6aad43dffa91" class="btn btn-primary">Buy now</a>
+                          </div>
+                          <form action="/cart" method="post">
+                            <input  type="hidden" name="img" value="Dashboard/watch2.jpg">
+                            <input  type="hidden"  name="name" value="Lime Stone">
+                            <input type="hidden" name="linkn" value="https://www.flipkart.com/analogue-all-matte-grey-elegant-series-water-resistant-1-year-quartz-machinery-warranty-analog-watch-boys/p/itm15c31cc4ff54d?pid=WATGYZRPJGZQNQMF&lid=LSTWATGYZRPJGZQNQMFPHIXKX&marketplace=FLIPKART&q=watches&store=r18&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_aH_LJf8m4GxCmuHbxFhsUeq1qg3GqxRb1tjq-N_6N6XrfeZLwOUqpReoIk6Tc_XaMpPmCrh2GBjc-HJ1WnH2QA%3D%3D&ppt=sp&ppn=sp&qH=2d6b6aad43dffa91">
+                            <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                          </form>
+                        </div>
+                        <div class="card" style="width: 20rem;">
+                          <img src="Dashboard/shoe1.jpg" class="card-img-top" width="100px" height="200px">
+                          <div class="card-body">
+                            <h5 class="card-title">Bruton</h5>
+                            <a href="https://www.flipkart.com/bruton-combopack-2-sports-shoes-running-shoes-walking-shoes-training-gym-shoes-men/p/itm0b9c5926e0ea7?pid=SHOGFFURFKNGTMGT&lid=LSTSHOGFFURFKNGTMGTFZQYQK&marketplace=FLIPKART&q=shoeas&store=osp&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_iw3U5hXBy0FL2L75OIFtqO10bKp3LacSlYVwatKWsuHPqKpte2oSAeVQCnGwxairlHyFiWH2rkVrqDXiP-Ivtg%3D%3D&ppt=sp&ppn=sp&ssid=mur5tex2rk0000001692530329413&qH=11c4ba592c4029da" class="btn btn-primary">Buy now</a>
+                            <form action="/cart" method="post">
+                              <input  type="hidden" name="img" value="Dashboard/shoe1.jpg">
+                              <input  type="hidden"  name="name" value="Bruton">
+                              <input type="hidden" name="linkn" value="https://www.flipkart.com/bruton-combopack-2-sports-shoes-running-shoes-walking-shoes-training-gym-shoes-men/p/itm0b9c5926e0ea7?pid=SHOGFFURFKNGTMGT&lid=LSTSHOGFFURFKNGTMGTFZQYQK&marketplace=FLIPKART&q=shoeas&store=osp&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_iw3U5hXBy0FL2L75OIFtqO10bKp3LacSlYVwatKWsuHPqKpte2oSAeVQCnGwxairlHyFiWH2rkVrqDXiP-Ivtg%3D%3D&ppt=sp&ppn=sp&ssid=mur5tex2rk0000001692530329413&qH=11c4ba592c4029da">
+                              <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                            </form>
+                          </div>
+                          </form>
+                        </div>
+                        <div class="card" style="width: 20rem;">
+                          <img src="Dashboard/shoe2.jpg" class="card-img-top" width="100px" height="200px">
+                          <div class="card-body">
+                            <h5 class="card-title">Urbanbox</h5>
+                            <a href="https://www.flipkart.com/world-wear-footwear-affordable-collection-stylish-sports-shoes-men-running/p/itmf24255ddad36f?pid=SHOFV2AD4DH7PBXV&lid=LSTSHOFV2AD4DH7PBXVYVN8PJ&marketplace=FLIPKART&q=shoeas&store=osp&spotlightTagId=BestsellerId_osp&srno=s_1_6&otracker=search&otracker1=search&fm=Search&iid=033712d5-a190-499a-95cf-da668f6e135d.SHOFV2AD4DH7PBXV.SEARCH&ppt=sp&ppn=sp&qH=11c4ba592c4029da" class="btn btn-primary">Buy now</a>
+                          </div>
+                          <form action="/cart" method="post">
+                            <input  type="hidden" name="img" value="Dashboard/shoe2.jpg">
+                            <input  type="hidden"  name="name" value="Urbanbox">
+                            <input type="hidden" name="linkn" value="https://www.flipkart.com/world-wear-footwear-affordable-collection-stylish-sports-shoes-men-running/p/itmf24255ddad36f?pid=SHOFV2AD4DH7PBXV&lid=LSTSHOFV2AD4DH7PBXVYVN8PJ&marketplace=FLIPKART&q=shoeas&store=osp&spotlightTagId=BestsellerId_osp&srno=s_1_6&otracker=search&otracker1=search&fm=Search&iid=033712d5-a190-499a-95cf-da668f6e135d.SHOFV2AD4DH7PBXV.SEARCH&ppt=sp&ppn=sp&qH=11c4ba592c4029da">
+                            <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                          </form>
+                        </div>
+                        </div>
+                        <a name="more"></a>
+                        <div class="remstyle">
+                            <div class="more">
+                              <a href="https://www.flipkart.com/products-list/recommended-for-you?screen=dynamic&pk=stores%3Dreh%2F4d7%2Fak9%2F~pIds%3DBKPF47HFGZGVQXSS%2CBKPF47HFGZGVQXSS%2CBKPF47HFUBR9X5GG~contentTags%3DADD_PARENT_TO_WIDGET~marketplace%3DFLIPKART~widgetType%3DproductCard~contentType%3DpersonalisedRecommendation%2Fp2p-same&marketplace=FLIPKART&wid=22.productCard.PMU_V2_13" class="more">View More</a>
+                            </div>
+                            <div class="card" style="width: 20rem;">
+                              <img src="Dashboard/bag1.jpg" class="card-img-top" width="500px" height="200px">
+                              <div class="card-body">
+                                <h5 class="card-title">American Tourister</h5>
+                                <a href="https://www.flipkart.com/american-tourister-fizz-sch-bag-32-5-l-backpack/p/itmf47g6n3mfwvsr?pid=BKPF47G66FUWZSZN&lid=LSTBKPF47G66FUWZSZNYRQICH&marketplace=FLIPKART&q=american+tourister+backpacks&store=reh%2F4d7&spotlightTagId=BestsellerId_reh%2F4d7&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&fm=search-autosuggest&iid=78c13fe1-95d3-44c7-b117-4c44729f1798.BKPF47G66FUWZSZN.SEARCH&ppt=sp&ppn=sp&ssid=3t4tie5c280000001692530386799&qH=1abe32de05963821" class="btn btn-primary">Buy now</a>
+                              </div>
+                              <form action="/cart" method="post">
+                                <input  type="hidden" name="img" value="Dashboard/bag1.jpg">
+                                <input  type="hidden"  name="name" value="American Tourister">
+                                <input type="hidden" name="linkn" value="https://www.flipkart.com/american-tourister-fizz-sch-bag-32-5-l-backpack/p/itmf47g6n3mfwvsr?pid=BKPF47G66FUWZSZN&lid=LSTBKPF47G66FUWZSZNYRQICH&marketplace=FLIPKART&q=american+tourister+backpacks&store=reh%2F4d7&spotlightTagId=BestsellerId_reh%2F4d7&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&fm=search-autosuggest&iid=78c13fe1-95d3-44c7-b117-4c44729f1798.BKPF47G66FUWZSZN.SEARCH&ppt=sp&ppn=sp&ssid=3t4tie5c280000001692530386799&qH=1abe32de05963821">
+                                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                              </form>
+                            </div>
+                            <div class="card" style="width: 20rem;">
+                              <img src="Dashboard/bag2.jpg" class="card-img-top" width="100px" height="200px">
+                              <div class="card-body">
+                                <h5 class="card-title">Sky Bags</h5>
+                                <a href="https://www.flipkart.com/skybags-brat-21-65-l-backpack/p/itm04aff3ff6fb19?pid=BKPGF764YQBHHGWJ&lid=LSTBKPGF764YQBHHGWJBUHHOK&marketplace=FLIPKART&q=sky+bags+backpacks&store=reh%2F4d7&spotlightTagId=BestsellerId_reh%2F4d7&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=6f6e0ac0-0361-439c-adf1-3f592a358c1d.BKPGF764YQBHHGWJ.SEARCH&ppt=sp&ppn=sp&qH=d0f4c977c8b349a3" class="btn btn-primary">Buy now</a>
+                              </div>
+                              <form action="/cart" method="post">
+                                <input  type="hidden" name="img" value="Dashboard/bag2.jpg">
+                                <input  type="hidden"  name="name" value="Sky Bags">
+                                <input type="hidden" name="linkn" value="https://www.flipkart.com/skybags-brat-21-65-l-backpack/p/itm04aff3ff6fb19?pid=BKPGF764YQBHHGWJ&lid=LSTBKPGF764YQBHHGWJBUHHOK&marketplace=FLIPKART&q=sky+bags+backpacks&store=reh%2F4d7&spotlightTagId=BestsellerId_reh%2F4d7&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=6f6e0ac0-0361-439c-adf1-3f592a358c1d.BKPGF764YQBHHGWJ.SEARCH&ppt=sp&ppn=sp&qH=d0f4c977c8b349a3">
+                                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                              </form>
+                            </div>
+                            <div class="card" style="width: 20rem;">
+                              <img src="Dashboard/plant1.jpg" class="card-img-top" width="100px" height="200px">
+                              <div class="card-body">
+                                <h5 class="card-title">Live Plant</h5>
+                                <a href="https://www.flipkart.com/agami-jade-plant/p/itmea9a2f9707132?pid=PSGFZYR62HKSDEBE&lid=LSTPSGFZYR62HKSDEBEZU6DGK&marketplace=FLIPKART&q=live+plant&store=h1m%2Fum7%2Fsd1%2Fa6l&srno=s_1_4&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=search-autosuggest&iid=439c2f16-db55-4e35-85f8-0a9d1e201fe5.PSGFZYR62HKSDEBE.SEARCH&ppt=sp&ppn=sp&ssid=v2wmtym5dc0000001692530457781&qH=3e994173ea73ef0e" class="btn btn-primary">Buy now</a>
+                              </div>
+                              <form action="/cart" method="post">
+                                <input  type="hidden" name="img" value="Dashboard/plant1.jpg">
+                                <input  type="hidden"  name="name" value="Live Plant">
+                                <input type="hidden" name="linkn" value="https://www.flipkart.com/agami-jade-plant/p/itmea9a2f9707132?pid=PSGFZYR62HKSDEBE&lid=LSTPSGFZYR62HKSDEBEZU6DGK&marketplace=FLIPKART&q=live+plant&store=h1m%2Fum7%2Fsd1%2Fa6l&srno=s_1_4&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=search-autosuggest&iid=439c2f16-db55-4e35-85f8-0a9d1e201fe5.PSGFZYR62HKSDEBE.SEARCH&ppt=sp&ppn=sp&ssid=v2wmtym5dc0000001692530457781&qH=3e994173ea73ef0e">
+                                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                              </form>
+                            </div>
+                            <div class="card" style="width: 20rem;">
+                              <img src="Dashboard/clock1.jpg" class="card-img-top" width="100px" height="200px">
+                              <div class="card-body">
+                                <h5 class="card-title">Clock</h5>
+                                <a href="https://www.flipkart.com/ajanta-analog-20-5-cm-x-wall-clock/p/itmejmvmh5ztmzha?pid=WCKEJMVMQNNVGFZT&lid=LSTWCKEJMVMQNNVGFZTERV2LB&marketplace=FLIPKART&q=clock&store=arb%2Fkjw&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=1bf7e2d2-3907-4723-a169-22d9742ea53e.WCKEJMVMQNNVGFZT.SEARCH&ppt=sp&ppn=sp&ssid=86fcaiil8g0000001692530484648&qH=05531b19bb846b18" class="btn btn-primary">Buy now</a>
+                              </div>
+                              <form action="/cart" method="post">
+                                <input  type="hidden" name="img" value="Dashboard/clock1.jpg">
+                                <input  type="hidden"  name="name" value="Clock">
+                                <input type="hidden" name="linkn" value="https://www.flipkart.com/ajanta-analog-20-5-cm-x-wall-clock/p/itmejmvmh5ztmzha?pid=WCKEJMVMQNNVGFZT&lid=LSTWCKEJMVMQNNVGFZTERV2LB&marketplace=FLIPKART&q=clock&store=arb%2Fkjw&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=1bf7e2d2-3907-4723-a169-22d9742ea53e.WCKEJMVMQNNVGFZT.SEARCH&ppt=sp&ppn=sp&ssid=86fcaiil8g0000001692530484648&qH=05531b19bb846b18">
+                                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                              </form>
+                            </div>
+                            <div class="card" style="width: 20rem;">
+                              <img src="Dashboard/plant1.jpg" class="card-img-top" width="100px" height="200px">
+                              <div class="card-body">
+                                <h5 class="card-title">AGAMI Jade Plant</h5>
+                                <a href="https://www.amazon.in/Plantoos-Combo-Indoor-Plants-Decor/dp/B0BJTP7T3M/ref=sr_1_2_sspa?crid=343YU1WTX6ZQD&keywords=live+plant&qid=1692530545&sprefix=live+plant%2Caps%2C375&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" class="btn btn-primary">Buy now</a>
+                              </div>
+                              <form action="/cart" method="post">
+                                <input  type="hidden" name="img" value="Dashboard/plant1.jpg">
+                                <input  type="hidden"  name="name" value="AGAMI Jade Plant">
+                                <input type="hidden" name="linkn" value="https://www.amazon.in/Plantoos-Combo-Indoor-Plants-Decor/dp/B0BJTP7T3M/ref=sr_1_2_sspa?crid=343YU1WTX6ZQD&keywords=live+plant&qid=1692530545&sprefix=live+plant%2Caps%2C375&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+                                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                              </form>
+                            </div>
+                            <div class="card" style="width: 20rem;">
+                              <img src="Dashboard/toy1.jpg" class="card-img-top" width="100px" height="200px">
+                              <div class="card-body">
+                                <h5 class="card-title">Avengers Heros</h5>
+                                <a href="https://www.flipkart.com/ssjmart-avengers-hero-action-figure-5-super-heroes-captain-america-iron-man-spiderman-hulk-thanos-multicolor/p/itm18bcb575c6bce?pid=AFGG7HWDECHNDRXN&lid=LSTAFGG7HWDECHNDRXNGCTIGL&marketplace=FLIPKART&q=Avengares+herores&store=tng%2Fsv3%2Fzum&spotlightTagId=FkPickId_tng%2Fsv3%2Fzum&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=ceff99d4-bf9b-410c-822e-36f5fd21712a.AFGG7HWDECHNDRXN.SEARCH&ppt=sp&ppn=sp&ssid=3aasqzs1xc0000001692530578409&qH=2b37953e5293de03" class="btn btn-primary">Buy now</a>
+                              </div>
+                              <form action="/cart" method="post">
+                                <input  type="hidden" name="img" value="Dashboard/toy1.jpg">
+                                <input  type="hidden"  name="name" value="Avengers Heros">
+                                <input type="hidden" name="linkn" value="https://www.flipkart.com/ssjmart-avengers-hero-action-figure-5-super-heroes-captain-america-iron-man-spiderman-hulk-thanos-multicolor/p/itm18bcb575c6bce?pid=AFGG7HWDECHNDRXN&lid=LSTAFGG7HWDECHNDRXNGCTIGL&marketplace=FLIPKART&q=Avengares+herores&store=tng%2Fsv3%2Fzum&spotlightTagId=FkPickId_tng%2Fsv3%2Fzum&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=ceff99d4-bf9b-410c-822e-36f5fd21712a.AFGG7HWDECHNDRXN.SEARCH&ppt=sp&ppn=sp&ssid=3aasqzs1xc0000001692530578409&qH=2b37953e5293de03">
+                                <input  id="carts" type="submit" value="Add to cart" class="btn btn-primary">
+                              </form>
+                            </div>
+                            </div>
+           <%- include("footer.ejs")%>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

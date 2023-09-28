@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="Dashboardstyle.css">
+  </head>
+  <body>
+       <%- include("header.ejs")%>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Dashboard/banner3.jpg" class="d-block w-100" height="500px">
+            </div>
+            <div class="carousel-item">
+              <img src="Dashboard/banner2.jpg" class="d-block w-100"  height="500px">
+            </div>
+            <div class="carousel-item">
+              <img src="Dashboard/banner1.jpg" class="d-block w-100" height="500px">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="fashions">
+          <div class="choise">
+            <h1>Fashions</h2>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="Dashboard/fshirt.jpg" class="card-img-top" width="100px" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">Shirts</h5>
+              <a href="/items" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="Dashboard/fpant.jpg" class="card-img-top" width="100px" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">jeans pants</h5>
+              <a href="/items#pant" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="Dashboard/fdress.jpg" class="card-img-top" width="100px" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">Dresses</h5>
+              <a href="/items#dress" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="Dashboard/fkid.jpg" class="card-img-top" width="100px" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">Kids wear</h5>
+              <a href="/items#dress" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+          </div>
+          <div class="Electronics">
+            <div class="echoise">
+              <h1 id="eh1">Electronics and Kitchen Essentials</h1>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/etv.jpg" class="card-img-top" width="500px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Televisions</h5>
+                <a href="/items#Electronics" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/emobile.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Smart Phones</h5>
+                <a href="/items#mobile" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/ebud.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Ear Buds</h5>
+                <a href="/items#mobile" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/laptop.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Laptops</h5>
+                <a href="/items#mobile" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+            </div>
+            
+          <div class="pickupstyle">
+            <div class="schoise">
+              <h1 id="eh2">Pick Your Styles</h1>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/pglass.jpg"card-img-top" width="500px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Sunglasses</h5>
+                <a href="/items#pickup" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/pbelt.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">belts</h5>
+                <a href="/items#pickup" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/pwatch.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Smart Watches</h5>
+                <a href="/items#pickup" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+              <img src="Dashboard/pshoe.jpg" class="card-img-top" width="100px" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">Stylish Shoes</h5>
+                <a href="/items#pickup" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+            </div>
+            <div class="remstyle">
+              <div class="more">
+                <a href="https://www.amazon.in/gp/goldbox/?ie=UTF8&ref=nav_topnav_deals&_ref=dlx_gate_sd_dcl_vai_dt&pd_rd_w=J4CcM&content-id=amzn1.sym.9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_p=9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_r=JRJ8ZMBCSW6W8CG5SX6D&pd_rd_wg=yizG9&pd_rd_r=d376d9cd-b824-4ea3-b87d-1107313c8b3a&ref_=pd_gw_unk" class="more">View More</a>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="Dashboard/rem.jpg" class="card-img-top" width="500px" height="200px">
+                <div class="card-body">
+                  <h5 class="card-title">Bags</h5>
+                  <a href="items#more" class="btn btn-primary">See More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="Dashboard/remclock.jpg" class="card-img-top" width="100px" height="200px">
+                <div class="card-body">
+                  <h5 class="card-title">Clocks</h5>
+                  <a href="items#more" class="btn btn-primary">See More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="Dashboard/remplant.jpg" class="card-img-top" width="100px" height="200px">
+                <div class="card-body">
+                  <h5 class="card-title">Live plant</h5>
+                  <a href="items#more" class="btn btn-primary">See More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="Dashboard/remmouse.jpg" class="card-img-top" width="100px" height="200px">
+                <div class="card-body">
+                  <h5 class="card-title">Mouse</h5>
+                  <a href="items#more" class="btn btn-primary">See More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="Dashboard/remcamera.jpg" class="card-img-top" width="100px" height="200px">
+                <div class="card-body">
+                  <h5 class="card-title">Camera</h5>
+                  <a href="items#more" class="btn btn-primary">See More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="Dashboard/remtoy.jpg" class="card-img-top" width="100px" height="200px">
+                <div class="card-body">
+                  <h5 class="card-title">Toys</h5>
+                  <a href="items#more" class="btn btn-primary">See More</a>
+                </div>
+              </div>
+              </div>
+              <%- include("footer.ejs")%>
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
